@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Link from "next/link";
+import { Gamepad } from "lucide-react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,6 +30,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header className="px-4 lg:px-6 min-h-[5vh] flex items-center">
+          <Link className="flex items-center justify-center" href="/">
+            <Gamepad className="h-6 w-6" />
+            <span className="ml-2 text-lg font-bold">Game Zone</span>
+          </Link>
+        </header>
         {children}
       </body>
     </html>
