@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { Bomb, Brain, Circle, Flag, Gamepad, Grid, X } from "lucide-react";
 import Link from "next/link";
-import { Gamepad, Grid, Brain } from "lucide-react";
 
 export default function GamesPortalLanding() {
   return (
@@ -45,8 +45,35 @@ export default function GamesPortalLanding() {
                 </Link>
               </div>
               <div className="flex flex-col items-center space-y-4">
-                <div className="bg-white p-4 rounded-full">
+                <div className="bg-white relative p-4 rounded-full">
+                  <Grid className="h-12 w-12 text-gray-600" />
+                  <X
+                    size={8}
+                    className="absolute top-6 left-6 font-semibold text-blue-500"
+                  />
+                  <Circle
+                    size={8}
+                    className="absolute top-9 left-6 text-red-500"
+                  />
+                </div>
+                <h3 className="text-xl font-bold">Tic Tac Toe (Advance)</h3>
+                <p className="text-center text-gray-500 dark:text-gray-400">
+                  {
+                    "A 3x3 block with 3x3 grids. Win by completing a row, column, or diagonal."
+                  }
+                </p>
+                <Link href="/tic-tac-toe">
+                  <Button variant="outline">Play Tic Tac Toe</Button>
+                </Link>
+              </div>
+              <div className="flex flex-col items-center space-y-4">
+                <div className="bg-white p-4 relative rounded-full">
                   <Grid className="h-12 w-12 text-blue-500" />
+                  <Bomb size={8} className="absolute top-6 left-6 fill-black" />
+                  <Flag
+                    size={8}
+                    className="absolute top-9 left-6 fill-yellow-500"
+                  />
                 </div>
                 <h3 className="text-xl font-bold">Minesweeper</h3>
                 <p className="text-center text-gray-500 dark:text-gray-400">

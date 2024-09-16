@@ -11,11 +11,12 @@
 
 # next.js
 /.next/
+/.open-next/
 /out/
 
 # production
 /build
-
+.turbo/
 # misc
 .DS_Store
 *.pem
