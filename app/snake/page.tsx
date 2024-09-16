@@ -7,8 +7,8 @@ import { useCallback, useEffect, useState } from "react";
 type Direction = "UP" | "DOWN" | "LEFT" | "RIGHT";
 type Position = [number, number];
 
-const GRID_SIZE = 25;
-const CELL_SIZE = 25;
+const GRID_SIZE = 20;
+const CELL_SIZE = 20;
 const INITIAL_SNAKE: Position[] = [[5, 5]];
 const INITIAL_FOOD: Position = [10, 10];
 const INITIAL_DIRECTION: Direction = "RIGHT";

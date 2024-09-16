@@ -250,7 +250,7 @@ export default function SudokuGame() {
           row.map((cell, j) => (
             <div
               key={`${i}-${j}`}
-              className={`w-12 h-12 flex items-center justify-center text-gray-100 ${
+              className={`w-8 h-8 flex items-center justify-center text-gray-100 ${
                 cell === 0 ? "bg-gray-400" : "bg-gray-700"
               } ${
                 i % 3 === 2 && i !== 8 ? "border-b border-gray-900" : ""

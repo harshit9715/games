@@ -180,7 +180,7 @@ export default function Minesweeper() {
             {row.map((cell, colIndex) => (
               <button
                 key={`${rowIndex}-${colIndex}`}
-                className={`w-12 h-12 rounded-sm flex text-black items-center ml-1 first:ml-0 justify-center font-bold ${getCellColor(cell)}`}
+                className={`w-8 h-8 rounded-sm flex text-black items-center ml-1 first:ml-0 justify-center font-bold ${getCellColor(cell)}`}
                 onClick={() => revealCell(rowIndex, colIndex)}
                 onContextMenu={(e) => {
                   e.preventDefault();

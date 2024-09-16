@@ -24,7 +24,7 @@ const Cell: React.FC<{
   disabled: boolean;
 }> = ({ value, onClick, disabled }) => (
   <button
-    className={`w-12 h-12 border border-gray-900 flex items-center justify-center text-xl font-bold ${
+    className={`w-8 h-8 border border-gray-900 flex items-center justify-center text-xl font-bold ${
       disabled ? "cursor-not-allowed bg-gray-900" : "hover:bg-gray-400"
     } ${value === "X" ? "text-blue-500" : "text-red-500"}`}
     onClick={onClick}
